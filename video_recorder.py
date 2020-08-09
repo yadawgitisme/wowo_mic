@@ -29,7 +29,7 @@ def stop():
     return 'Stopped'
 
 if __name__ == "__main__":
-    app.run(debug=True,host='0.0.0.0',port=int(os.environ.get('PORT', 8080)))
+    app.run(debug=True,host='192.168.1.128',port=int(os.environ.get('PORT', 8080)))
     
 # Ubuntu open port: $ sudo ufw allow 8080/tcp
 # pip install pyopenssl // app.run(ssl_context='adhoc')
